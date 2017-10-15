@@ -25,5 +25,5 @@ dependencies {
 }
 
 // Define the main class for the application
-mainClassName = 'App'
+mainClassName = 'guide.vanilla_project.App'
 

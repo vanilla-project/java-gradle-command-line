@@ -35,6 +35,11 @@ All tests can be run by executing
 
 The test for class `Example` is only verifying the return value of one method.
 
+`App` on the other hand is tested via a test-double that gets injected.
+This allows us to _spy_ on the output of it.
+We want to avoid printing anything to the screen while running the tests.
+Injecting a test double in this instance is a nice way to isolate our application from the command line.
+
 
 ## Built With
 
