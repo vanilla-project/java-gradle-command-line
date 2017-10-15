@@ -24,6 +24,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-// Define the main class for the application
-mainClassName = 'guide.vanilla_project.App'
-
+jar {
+    manifest {
+        attributes 'Main-Class': 'guide.vanilla_project.Main'
+    }
+}

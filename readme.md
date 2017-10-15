@@ -40,6 +40,18 @@ This allows us to _spy_ on the output of it.
 We want to avoid printing anything to the screen while running the tests.
 Injecting a test double in this instance is a nice way to isolate our application from the command line.
 
+In the actual `Main` class we then inject `System.out`, which is Java's standard output stream.
+
+
+## Running the Application
+
+After running `gradlew jar` the resulting JAR file is located in directory `build/libs`.
+The application can now be run by executing
+
+```
+java -jar build/libs/java-gradle-command-line.jar
+```
+
 
 ## Built With
 
