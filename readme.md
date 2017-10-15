@@ -9,6 +9,33 @@ Java 1.8 is expected to be installed on our system.
 Having Gradle installed is optional as it is also included in this repository with the [Gradle wrapper `gradlew`](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
 
 
+### Installing
+
+After cloning this repository, change into the newly created directory and run
+
+```
+./gradlew build
+```
+
+This will install all dependencies needed for the project as well as compile all source files into an executable JAR file.
+
+
+## Running the Tests
+
+All tests can be run by executing
+
+```
+./gradlew test
+```
+
+`gradlew` will automatically find all tests inside the `src/test` directory and run them.
+
+
+### Testing Approach
+
+The test for class `Example` is only verifying the return value of one method.
+
+
 ## Built With
 
 - [Java](https://www.java.com)
